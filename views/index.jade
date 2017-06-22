@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.display#display
+    span#speed 步进电机控制
+  div.control
+    <button data-icon="forward" data-iconpos="top" id="positive">正转</button>
+    <button data-icon="back" data-iconpos="top" id="negetive">反转</button>
+    <button data-icon="alert" data-iconpos="top" id="stop">停止</button>
+    <input type="range" name="points" id="speed" value="2" min="2" max="8"  data-highlight="true">
